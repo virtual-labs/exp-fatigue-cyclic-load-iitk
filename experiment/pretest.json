@@ -68,23 +68,6 @@
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
-    },
-    {
-      "question": "5. Consider R. R. Moore type machine. If the load is 100 N, arm length (or length of the sample) is 100 mm, and diameter is 4 mm, then peak stress (σa) is: ",
-      "answers": {
-        "a": "398 MPa",
-        "b": "796 MPa",
-        "c": "1592 MPa",
-        "d": "1194 MPa"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
     }
   ]
 }
