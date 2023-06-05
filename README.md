@@ -1,6 +1,5 @@
 ## Introduction
 
-
 <b>Discipline | <b> Mechanical Enginnering
 :--|:--|
 <b> Lab | <b> Mechanical Metallurgy Lab
@@ -8,7 +7,7 @@
 
 ### About the Experiment 
 
-<b> Fill Here
+<b> The R. R. Moore type (rotating beam fatigue testing) fatigue machine is shown in Fig.1a. The machine design is based on the rotating beam principle (shown in Fig. 1b). The specimen functions as a simple beam symmetrically loaded at two points. When rotated one half revolution, the stresses in the fibers originally below the neutral axis are reversed from tension to compression and vice versa. Upon completing the revolution, the stresses are again reversed so that during one revolution the test specimen passes through a complete cycle of flexural stress (tension and compression).
 
 <b>Name of Developer | <b> Prof. Sudhansu S. Singh , Prof. Shashank Shekhar
 :--|:--|
