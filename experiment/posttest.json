@@ -3,7 +3,7 @@
   "questions": [
     {
       "question": "1. If the maximum and minimum stresses are 100 MPa and 0 MPa, then the R-ratio is:",
-      "answers": {
+      "answer": {
         "a": " :  ̶ 1",
         "b": "100",
         "c": "0",
@@ -20,7 +20,7 @@
     },
     {
       "question": " 2. Fatigue is a degradation of mechanical properties under",
-      "answers": {
+      "answer": {
         "a": "Tensile loading",
         "b": "Cyclic loading",
         "c": "Impact loading",
@@ -37,7 +37,7 @@
     },
     {
       "question": "This is a Sample Question 2?",
-      "answers": {
+      "answer": {
         "a": "answer1",
         "b": "answer2",
         "c": "answer3",
@@ -54,7 +54,7 @@
     },
     {
       "question": "3. In low cycle fatigue, the components usually endure less than:",
-      "answers": {
+      "answer": {
         "a": "10<sup>4</sup> cycles",
         "b": "10<sup>5</sup> cycles",
         "c": "10<sup>6</sup> cycles",
@@ -71,7 +71,7 @@
     },
     {
       "question": "4. The mean stress for completely reversed cycle is:",
-      "answers": {
+      "answer": {
         "a": ":  ̶ 1",
         "b": "Cannot be comprehended.",
         "c": "0",
@@ -105,7 +105,7 @@
     },
     {
       "question": "6. Fatigue strength is the stress level corresponding to the number of cycles of:",
-      "answers": {
+      "answer": {
         "a": "10<sup>6</sup> cycles",
         "b": "10<sup>5</sup> cycles",
         "c": "10<sup>9</sup> cycles",
