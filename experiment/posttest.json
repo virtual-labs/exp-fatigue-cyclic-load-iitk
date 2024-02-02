@@ -2,9 +2,9 @@
   "version": 2.0,
   "questions": [
     {
-      "question":"1. If the maximum and minimum stresses are 100 MPa and 0 MPa, then the R-ratio is:",
-      "answer": {
-        "a": " ̶ 1",
+      "question": "1. If the maximum and minimum stresses are 100 MPa and 0 MPa, then the R-ratio is:",
+      "answers": {
+        "a": "-1",
         "b": "100",
         "c": "0",
         "d": "1"
@@ -19,8 +19,8 @@
       "difficulty": "beginner"
     },
     {
-      "question":"2. Fatigue is a degradation of mechanical properties under",
-      "answer": {
+      "question": "2. Fatigue is a degradation of mechanical properties under",
+      "answers": {
         "a": "Tensile loading",
         "b": "Cyclic loading",
         "c": "Impact loading",
@@ -37,7 +37,7 @@
     },
     {
       "question": "3. In low cycle fatigue, the components usually endure less than:",
-      "answer": {
+      "answers": {
         "a": "10<sup>4</sup> cycles",
         "b": "10<sup>5</sup> cycles",
         "c": "10<sup>6</sup> cycles",
@@ -54,9 +54,9 @@
     },
     {
       "question": "4. The mean stress for completely reversed cycle is:",
-      "answer": {
-        "a": " ̶ 1",
-        "b": "Cannot be comprehended.",
+      "answers": {
+        "a": "-1",
+        "b": "Cannot be comprehended",
         "c": "0",
         "d": "1"
       },
@@ -70,7 +70,7 @@
       "difficulty": "beginner"
     },
     {
-      "question":"5. Consider vertical machine for fatigue testing (like tensile testing). If the cross-sectional area of the sample is 10 mm2, maximum load is 1000 N and minimum load is 100 N, then the stress amplitude is:",
+      "question": "5. Consider vertical machine for fatigue testing (like tensile testing). If the cross-sectional area of the sample is 10 mm2, maximum load is 1000 N and minimum load is 100 N, then the stress amplitude is:",
       "answers": {
         "a": "90 MPa",
         "b": "45 MPa",
@@ -87,8 +87,8 @@
       "difficulty": "beginner"
     },
     {
-      "question":"6. Fatigue strength is the stress level corresponding to the number of cycles of:",
-      "answer": {
+      "question": "6. Fatigue strength is the stress level corresponding to the number of cycles of:",
+      "answers": {
         "a": "10<sup>6</sup> cycles",
         "b": "10<sup>5</sup> cycles",
         "c": "10<sup>9</sup> cycles",
