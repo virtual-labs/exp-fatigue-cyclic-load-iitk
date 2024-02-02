@@ -3,7 +3,7 @@
   "questions": [
     {
       "question": "1. What is the stress ratio for completely reversed cycle fatigue?",
-      "answer": {
+      "answers": {
         "a": "0",
         "b": "1",
         "c": "-1",
@@ -20,7 +20,7 @@
     },
     {
       "question": "2. R-R Moore type fatigue testing machine is based on:",
-      "answer": {
+      "answers": {
         "a": "Four-point bending",
         "b": "Three-point bending",
         "c": "Two-point bending",
@@ -37,7 +37,7 @@
     },
     {
       "question": "3. In high cycle fatigue, the components usually endure higher than:",
-      "answer": {
+      "answers": {
         "a": "10<sup>6</sup> cycles",
         "b": "10<sup>5</sup> cycles",
         "c": "10<sup>7</sup> cycles",
@@ -54,7 +54,7 @@
     },
     {
       "question": "4. If the maximum and minimum stresses in a cycle is 200 MPa and  ̶ 100 MPa, the stress range is",
-      "answer": {
+      "answers": {
         "a": "100",
         "b": "150",
         "c": "300",
