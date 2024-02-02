@@ -4,7 +4,7 @@
     {
       "question": "1. If the maximum and minimum stresses are 100 MPa and 0 MPa, then the R-ratio is:",
       "answer": {
-        "a": " :  ̶ 1",
+        "a": " ̶ 1",
         "b": "100",
         "c": "0",
         "d": "1"
@@ -33,23 +33,6 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answer": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
