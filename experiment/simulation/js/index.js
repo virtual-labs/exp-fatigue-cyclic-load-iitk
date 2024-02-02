@@ -1,25 +1,84 @@
 const charts = {};
-const totalSteps = 10;
-const DATA_UPDATE_ANIMATION_DELAY = 600;
+const DATA_UPDATE_ANIMATION_DELAY = 400;
 
-// const temperature = [1.06E+04, 1.56E+04, 1.61E+04, 2.22E+04, 2.50E+04, 3.78E+04, 5.54E+04, 7.22E+04, 1.09E+05, 1.09E+05, 1.85E+05, 1.90E+05, 3.54E+05, 4.61E+05, 8.31E+05, 9.36E+05, 1.42E+06, 1.69E+06, 2.71E+06, 3.64E+06, 5.20E+06, 8.84E+06, 1.55E+07, 2.97E+07, 6.60E+07, 9.72E+07, 1.91E+08, 3.57E+08, 4.65E+08, 7.69E+08, 1.35E+09, 3.00E+09, 3.38E+09, 5.26E+09, 7.72E+09
-// ];
-
-const temperature = [
-  6.74e3, 9.87e3, 1.15e4, 2.06e4, 2.12e4, 4.57e4, 5.77e4, 9.82e4, 1.48e5, 2.92e5, 4.82e5, 7.52e5, 1.2e6, 1.99e6, 2.91e6,
-  4.68e6, 7.27e6, 1.04e7, 1.87e7, 2.67e7, 4.27e7, 7.28e7, 1.2e8, 1.87e8, 3.38e8, 5.42e8, 8.95e8, 1.71e9, 2.75e9, 3.59e9,
-  5.92e9, 8.43e9,
+const steelData = [
+  [10600, 496],
+  [15600, 491],
+  [16100, 479],
+  [22200, 473],
+  [25000, 463],
+  [37800, 454],
+  [55400, 434],
+  [72200, 424],
+  [109000, 415],
+  [109000, 399],
+  [185000, 390],
+  [190000, 375],
+  [354000, 365],
+  [461000, 343],
+  [831000, 332],
+  [936000, 330],
+  [1420000, 327],
+  [1690000, 314],
+  [2710000, 313],
+  [3640000, 321],
+  [5200000, 325],
+  [8840000, 314],
+  [15500000, 314],
+  [29700000, 316],
+  [66000000, 308],
+  [97200000, 327],
+  [191000000, 308],
+  [357000000, 322],
+  [465000000, 309],
+  [769000000, 318],
+  [1350000000, 314],
+  [3000000000, 311],
+  [3380000000, 330],
+  [5260000000, 317],
+  [7720000000, 312],
 ];
-//in degree C
 
-// const Impact_Energy= [496, 491, 479, 473, 463, 454, 434, 424, 415, 399, 390, 375, 365, 343, 332, 330, 327, 314, 313, 321, 325, 314, 314, 316, 308, 327, 308, 322, 309, 318, 314, 311, 330, 317, 312
-// ];
-
-const Impact_Energy = [
-  381, 354, 380, 338, 321, 304, 284, 278, 255, 242, 226, 229, 204, 196, 184, 184, 162, 162, 148, 162, 135, 134, 116,
-  120, 108, 111, 95, 94, 80, 86, 73, 61,
+const alData = [
+  [6740, 381],
+  [9870, 354],
+  [11500, 380],
+  [20600, 338],
+  [21200, 321],
+  [45700, 304],
+  [57700, 284],
+  [98200, 278],
+  [148000, 255],
+  [292000, 242],
+  [482000, 226],
+  [752000, 229],
+  [1200000, 204],
+  [1990000, 196],
+  [2910000, 184],
+  [4680000, 184],
+  [7270000, 162],
+  [10400000, 162],
+  [18700000, 148],
+  [26700000, 162],
+  [42700000, 135],
+  [72800000, 134],
+  [120000000, 116],
+  [187000000, 120],
+  [338000000, 108],
+  [542000000, 111],
+  [895000000, 95],
+  [1710000000, 94],
+  [2750000000, 80],
+  [3590000000, 86],
+  [5920000000, 73],
+  [8430000000, 61],
 ];
-// in mN
+
+const steelDataX = steelData.map((x) => x[0]);
+const steelDataY = steelData.map((x) => x[1]);
+
+const alDataX = alData.map((x) => x[0]);
+const alDataY = alData.map((x) => x[1]);
 
 var currPos = 0;
 var currentStepProgress = 1;
@@ -63,7 +122,7 @@ function handleStep2() {
   plotGraph(
     document.getElementById("outputGraphA").getContext("2d"),
     {
-      labels: temperature,
+      labels: steelDataX,
       datasets: [
         {
           data: [],
@@ -72,14 +131,44 @@ function handleStep2() {
         },
       ],
     },
-    "Amplitude Stress (MPa)",
-    "No. of cycles"
+    "No. of cycles (x10^6)",
+    "Amplitude Stress (MPa)"
+  );
+
+  //plot blank graph init graphs
+  plotGraph(
+    document.getElementById("outputGraphB").getContext("2d"),
+    {
+      labels: alDataX,
+      datasets: [
+        {
+          data: [],
+          borderColor: "red",
+          fill: false,
+        },
+      ],
+    },
+    "No. of cycles (x10^6)",
+    "Amplitude Stress (MPa)"
   );
 
   document.getElementById("btnNext").disabled = true;
 
+  let mode = "";
+  let subStepCnt = 0;
+  const btnReset = document.getElementById("btnReset");
+  // const resultTable = document.getElementById("impactTestResult");
+
+  btnReset.addEventListener("click", (e) => {
+    btnReset.disabled = true;
+    document.getElementById("startTest").disabled = false;
+    document.getElementById("startTest").innerHTML = "Perform Test " + (subStepCnt + 1);
+  });
+
   document.getElementById("startTest").addEventListener("click", (e) => {
-    let tableBody = document.getElementById("testData");
+    document.getElementById("startTest").disabled = true;
+    let tableBody1 = document.getElementById("testData");
+    let tableBody2 = document.getElementById("testData2");
     // e.currentTarget.disabled = true;
     // document.getElementById("btnNext").disabled = true;
     // e.currentTarget.innerHTML = "Running...";
@@ -95,40 +184,76 @@ function handleStep2() {
     }, 500);
 
     let intr = setInterval(() => {
+      const totalSteps = subStepCnt === 0 ? steelData.length : alData.length;
       if (currPos >= totalSteps) {
         clearInterval(intr);
-        document.getElementById("startTest").disabled = false;
-        document.getElementById("startTest").innerHTML = "Done";
+        document.getElementById("startTest").disabled = true;
         mit.stop();
-        document.getElementById("btnNext").disabled = false;
+
+        if (subStepCnt == 1) {
+          document.getElementById("btnNext").disabled = false;
+          document.getElementById("startTest").innerHTML = "Done";
+          return;
+        }
+
+        btnReset.disabled = false;
+        subStepCnt++;
+        currPos = 0;
         return;
       }
 
-      tableBody.innerHTML += `
-            <tr>
-              <td>${temperature[currPos]}</td>
-              <td>${Impact_Energy[currPos]}</td>
-            </tr>
-          `;
-      currPos++;
+      if (subStepCnt == 0) {
+        tableBody1.innerHTML += `
+              <tr>
+                <td>${steelData[currPos][0]}</td>
+                <td>${steelData[currPos][1]}</td>
+              </tr>
+            `;
+        let progress1 = (steelDataY.length / totalSteps) * (currPos + 1);
 
-      let progress1 = (Impact_Energy.length / totalSteps) * currPos;
-      plotGraph(
-        document.getElementById("outputGraphA").getContext("2d"),
-        {
-          labels: temperature,
-          datasets: [
-            {
-              yAxisID: "A",
-              data: Impact_Energy.slice(0, progress1),
-              borderColor: "#3e95cd",
-              fill: false
-            },
-          ],
-        },
-        "Amplitude Stress (MPa)",
-        "No. of cycles"
-      );
+        plotGraph(
+          document.getElementById("outputGraphA").getContext("2d"),
+          {
+            labels: steelDataX,
+            datasets: [
+              {
+                yAxisID: "A",
+                data: steelDataY.slice(0, progress1),
+                borderColor: "#3e95cd",
+                fill: false,
+              },
+            ],
+          },
+          "No. of cycles (x10^6)",
+          "Amplitude Stress (MPa)"
+        );
+      } else {
+        tableBody2.innerHTML += `
+              <tr>
+                <td>${alData[currPos][0]}</td>
+                <td>${alData[currPos][1]}</td>
+              </tr> `;
+
+        let progress1 = (alDataY.length / totalSteps) * (currPos + 1);
+        plotGraph(
+          document.getElementById("outputGraphB").getContext("2d"),
+          {
+            labels: alDataX,
+            datasets: [
+              {
+                yAxisID: "A",
+                data: alDataY.slice(0, progress1),
+                borderColor: "red",
+                fill: false,
+              },
+            ],
+          },
+          "No. of cycles (x10^6)",
+          "Amplitude Stress (MPa)"
+        );
+      }
+
+      currPos++;
     }, DATA_UPDATE_ANIMATION_DELAY);
   });
 
@@ -153,120 +278,6 @@ function handleStep3() {
   next.classList.remove("disabled");
 
   currentStepProgress = 4;
-
-  modal = new Modal({
-    title: "Can you answer the questions?",
-    body: [
-      {
-        page: 1,
-        title: "In the Charpy impact test the specimen is kept as:?",
-        options: ["Fixed end beam", "Simply supported beam", "Cantilever beam", " Overhanging beam"],
-        correct: 2,
-      },
-
-      {
-        page: 2,
-        title: "For impact test, T1 in the schematic below correspond to (T indicates temperature)?",
-        image: "images/QuestionsImages/fig4.png",
-        options: ["T1 - FTP", " T1 - DTT", " T1 - FATT", "T1 - NDT"],
-        correct: 1,
-      },
-
-      {
-        page: 3,
-        title: "In impact testing, Ductility Transition Temperature is the temperature at which the energy is: ",
-
-        options: [" 20 J", "30 J", "10 J", "40 J"],
-        correct: 1,
-      },
-
-      {
-        page: 4,
-        title: "In a hypothetical curve given below for impact testing, A might correspond to: ",
-        image: "images/QuestionsImages/fig3.png",
-        options: ["  Mild steel", "  Low carbon steel", "Chromium ", "Nickel"],
-        correct: 4,
-      },
-
-      {
-        page: 5,
-        title: "Which of the following is correct? ",
-
-        options: [
-          " In Izod test, the specimen is kept horizontally",
-          " The angle of the V-notch specimen is 60o",
-          " In Charpy test, the specimen is kept horizontally",
-          "The initial height of the pendulum is the impact energy",
-        ],
-        correct: 3,
-      },
-
-      {
-        page: 6,
-        title: "Fracture-appearance transition temperature, FATT corresponds to?",
-
-        options: [
-          "  40 % cleavage fracture",
-          " 50 % cleavage fracture",
-          " 0 % cleavage fracture",
-          "100 % cleavage fracture",
-        ],
-        correct: 2,
-      },
-
-      {
-        page: 7,
-        title: "For impact test, T5 in the schematic below correspond to (T indicates temperature)",
-        image: "images/QuestionsImages/fig4.png",
-        options: ["  T5 - FTP", " T5 - DTT", " T5 - FATT", " T5 - NDT"],
-        correct: 4,
-      },
-
-      {
-        page: 8,
-        title:
-          "Fracture surfaces of the same alloy are shown below from impact tests conducted at three different temperatures (T1, T2 and T3). Which one of them is true?",
-        image: "images/QuestionsImages/fig2.png",
-        options: ["  T1>T3>T2", "T3>T2>T1", " T3>T1>T2", "T2>T3>T1"],
-        correct: 1,
-      },
-
-      {
-        page: 9,
-        title: " In a hypothetical curve given below for impact testing, B might correspond to:",
-        image: "images/QuestionsImages/fig3.png",
-        options: ["  Copper", " Nickel", "Mild steel", " Aluminum "],
-        correct: 3,
-      },
-
-      {
-        page: 10,
-        title: " Which of the following is correct? ",
-
-        options: [
-          " In Izod test, the pendulum hits on the opposite surface to that containing notch",
-          "The impact energy is related to difference between initial and final height",
-          "In Charpy test, the pendulum hits on the same surface that contains notch",
-          "In India, we predominantly use Izod impact test",
-        ],
-        correct: 2,
-      },
-
-      {
-        page: 11,
-        title: "The strain rates in impact test are: ",
-        options: [
-          "  Slightly higher than tensile tests",
-          " lower than tensile tests",
-          "Almost similar to tensile tests",
-          " Much higher than tensile tess",
-        ],
-        correct: 4,
-      },
-    ],
-    onClose: handleStep4,
-  });
-  modal.show();
 }
 
 function handleStep4() {
@@ -278,6 +289,83 @@ function handleStep4() {
   let next = document.getElementById("step5");
   next.classList.add("active");
   next.classList.remove("disabled");
+
+  
+  modal = new Modal({
+    title: "Can you answer the questions?",
+    body: [
+      {
+        page: 1,
+        title: "What is the stress ratio for completely reversed cycle fatigue?",
+        options: ["0", "1", "-1", "∞"],
+        correct: 2,
+      },
+      {
+        page: 2,
+        title: "R-R Moore type fatigue testing machine is based on:",
+        options: ["Four-point bending", "Three-point bending", "Two-point bending", "Tensile loading"],
+        correct: 0,
+      },
+      {
+        page: 3,
+        title: "In high cycle fatigue, the components usually endure higher than:",
+        options: ["106 cycles", "105 cycles", "107 cycles", "104 cycles"],
+        correct: 3,
+      },
+      {
+        page: 4,
+        title: "If the maximum and minimum stresses in a cycle is 200 MPa and  ̶ 100 MPa, the stress range is:",
+        options: ["100", "150", "300", "50"],
+        correct: 2,
+      },
+      {
+        page: 5,
+        title:
+          "Consider R. R. Moore type machine. If the load is 100 N, arm length (or length of the sample) is 100 mm, and diameter is 4 mm, then peak stress (σa) is:",
+        options: ["398 MPa", "796 MPa", "1592 MPa", "1194 MPa"],
+        correct: 1,
+      },
+      {
+        page: 6,
+        title: "If the maximum and minimum stresses are 100 MPa and 0 MPa, then the R-ratio is:",
+        options: [" ̶ 1", "100", "0", "1"],
+        correct: 2,
+      },
+      {
+        page: 7,
+        title: "Fatigue is a degradation of mechanical properties under",
+        options: ["Tensile loading", "Cyclic loading", "Impact loading", "Constant loading"],
+        correct: 1,
+      },
+      {
+        page: 8,
+        title: "In low cycle fatigue, the components usually endure less than:",
+        options: ["104 cycles", "105 cycles", "106 cycles", "107 cycles"],
+        correct: 0,
+      },
+      {
+        page: 9,
+        title: "The mean stress for completely reversed cycle is:",
+        options: [" ̶ 1", "Cannot be comprehended.", "0", "1"],
+        correct: 2,
+      },
+      {
+        page: 10,
+        title:
+          "Consider vertical machine for fatigue testing (like tensile testing). If the cross-sectional area of the sample is 10 mm2, maximum load is 1000 N and minimum load is 100 N, then the stress amplitude is:",
+        options: ["90 MPa", "45 MPa", "55 MPa", "100 MPa"],
+        correct: 1,
+      },
+      {
+        page: 11,
+        title: "Fatigue strength is the stress level corresponding to the number of cycles of:",
+        options: ["106 cycles", "105 cycles", "109 cycles", "107 cycles"],
+        correct: 3,
+      },
+    ],
+    onClose: handleStep5,
+  });
+  modal.show();
 
   currentStepProgress = 5;
 }
@@ -324,6 +412,9 @@ function plotGraph(graphCtx, data, labelX, labelY) {
                 beginAtZero: true,
                 steps: 20,
                 stepValue: 10,
+                callback: function (value, index, values) {
+                  return parseFloat(value / 1000000).toLocaleString("en");
+                },
                 // max: Math.max(...temperature),
               },
               // stacked: true,
@@ -342,7 +433,7 @@ function plotGraph(graphCtx, data, labelX, labelY) {
                 beginAtZero: true,
                 steps: 10,
                 stepValue: 5,
-                max: Math.max(...Impact_Energy),
+                // max: Math.max(...Impact_Energy),
                 //max: 2000,
               },
             },

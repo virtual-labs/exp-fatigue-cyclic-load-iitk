@@ -26,16 +26,16 @@
                 <div class="content" style="display: flex; flex-wrap: wrap">
                   <div class="p-1 pointer" onclick="loadSample('brass')" title="Click to select this sample.">
                     <img src="images/sample/brass/sample.png" alt="" width="140" />
-                    <h6>Cast iron sample</h6>
+                    <!-- <h6>Cast iron sample</h6> -->
                   </div>
                 </div>
               </div>
               <div id="step2" class="box disabled">
                 <div class="label">Step 2: Select Load</div>
                 <div class="content" style="display: flex; flex-wrap: wrap">
-                  <div class="p-1 pointer" onclick="loadWeightClicked()" title="Click to select this sample.">
+                  <div class="p-1 pointer" onclick="loadWeightClicked()" title="Click to select this load.">
                     <img src="images/sample/aluminium/1.png" alt="" width="60" />
-                    <h6>Cast iron sample</h6>
+                    <!-- <h6>Weight</h6> -->
                   </div>
                 </div>
               </div>
@@ -48,11 +48,16 @@
                   </ul>
                   <div class="mt-1">
                     <button id="startTest">Start Test</button>
+                    <button id="btnReset" disabled>Next Sample</button>
                   </div>
 
+                  <h6>Steel Sample</h6>
                   <canvas id="outputGraphA"></canvas>
+                  <h6>Aluminium Sample</h6>
+                  <canvas id="outputGraphB"></canvas>
 
-                  <div class="mt-1 dataTable">
+                  <h5>Steel Sample</h5>
+                  <div class="mt-1 mb-2 dataTable">
                     <table>
                       <thead>
                         <tr>
@@ -63,23 +68,43 @@
                       <tbody id="testData"></tbody>
                     </table>
                   </div>
-                </div>
-              </div>
 
-              <div id="step4" class="box disabled">
-                <div class="label">Step 4: Activity</div>
-                <div class="content">Click next button to continue.</div>
-              </div>
-
-              <div id="step5" class="box disabled">
-                <div class="label">Step 5: Results.</div>
-                <div class="content">
-                  <!-- <p>Indention Point Scaled view</p> -->
-                  <div>
-                    <!-- <img src="images/results/output.bmp" alt="" style="width: 100%" /> -->
+                  <h5>Aluminium Sample</h5>
+                  <div class="mt-1 dataTable">
+                    <table>
+                      <thead>
+                        <tr>
+                          <td>No. of cycles (in No.s)</td>
+                          <td>Amplitude Stress (MPa)</td>
+                        </tr>
+                      </thead>
+                      <tbody id="testData2"></tbody>
+                    </table>
                   </div>
                 </div>
               </div>
+              <div id="step4" class="box disabled">
+                <div class="label">Step 4: Results.</div>
+                <div class="content">
+                  <h5>S-N Curve for steel and Aluminium</h5>
+                  <div>
+                    <img src="images/results/sn-curve.jpg" alt="" style="width: 100%" />
+                  </div>
+                  <ul>
+                    <li>Endurance Limit for Steel is ~320 MPa.</li>
+                    <li>
+                      Fatigue strength for Aluminum alloys is ~163 MPa @ 107 cycles since the materials doesn’t exhibit
+                      no endurance limit.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="step5" class="box disabled">
+                <div class="label">Step 5: Activity</div>
+                <div class="content">Click next button to continue.</div>
+              </div>
+
             </div>
 
             <div class="actions">
