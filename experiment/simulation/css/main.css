@@ -25,7 +25,7 @@ body {
 }
 
 .menu {
-  width: 280px;
+  width: 40vw;
   height: 100vh;
   padding-top: 10px;
   overflow-y: auto;
@@ -55,6 +55,12 @@ p {
 }
 .pointer{
   cursor: pointer;
+}
+.mb-2{
+  margin-bottom: 20px;
+}
+.mb-1{
+  margin-bottom: 10px;
 }
 
 .slider {
