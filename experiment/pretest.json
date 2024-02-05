@@ -55,7 +55,7 @@
     {
       "question": "4. If the maximum and minimum stresses in a cycle is 200 MPa and  ̶ 100 MPa, the stress range is",
       "answers": {
-        "a": "100",
+        "a": "-100",
         "b": "150",
         "c": "300",
         "d": "50"
