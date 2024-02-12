@@ -70,7 +70,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "5. Consider vertical machine for fatigue testing (like tensile testing). If the cross-sectional area of the sample is 10 mm<sup>2</sup>, maximum load is 1000 N and minimum load is 100 N, then the stress amplitude is:",
+      "question": "5. Consider vertical machine for fatigue testing (like tensile testing). If the cross-sectional area of the sample is 10 mm2, maximum load is 1000 N and minimum load is 100 N, then the stress amplitude is:",
       "answers": {
         "a": "90 MPa",
         "b": "45 MPa",
@@ -100,7 +100,7 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     }
   ]
