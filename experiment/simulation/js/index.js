@@ -309,26 +309,26 @@ function handleStep4() {
       {
         page: 3,
         title: "In high cycle fatigue, the components usually endure higher than:",
-        options: ["106 cycles", "105 cycles", "107 cycles", "104 cycles"],
+        options: ["10<sup>6</sup> cycles", "10<sup>5</sup> cycles", "10<sup>7</sup> cycles", "10<sup>4</sup> cycles"],
         correct: 3,
       },
       {
         page: 4,
-        title: "If the maximum and minimum stresses in a cycle is 200 MPa and  ̶ 100 MPa, the stress range is:",
+        title: "If the maximum and minimum stresses in a cycle is 200 MPa and -100 MPa, the stress range is:",
         options: ["100", "150", "300", "50"],
         correct: 2,
       },
       {
         page: 5,
         title:
-          "Consider R. R. Moore type machine. If the load is 100 N, arm length (or length of the sample) is 100 mm, and diameter is 4 mm, then peak stress (σa) is:",
+          "Consider R. R. Moore type machine. If the load is 100 N, arm length (or length of the sample) is 100 mm, and diameter is 4 mm, then peak stress (σ<sup>a</sup>) is:",
         options: ["398 MPa", "796 MPa", "1592 MPa", "1194 MPa"],
         correct: 1,
       },
       {
         page: 6,
         title: "If the maximum and minimum stresses are 100 MPa and 0 MPa, then the R-ratio is:",
-        options: [" ̶ 1", "100", "0", "1"],
+        options: ["-1", "100", "0", "1"],
         correct: 2,
       },
       {
@@ -340,26 +340,26 @@ function handleStep4() {
       {
         page: 8,
         title: "In low cycle fatigue, the components usually endure less than:",
-        options: ["104 cycles", "105 cycles", "106 cycles", "107 cycles"],
+        options: ["10<sup>4</sup> cycles", "10<sup>5</sup> cycles", "10<sup>6</sup> cycles", "10<sup>7</sup> cycles"],
         correct: 0,
       },
       {
         page: 9,
-        title: "The mean stress for completely reversed cycle is:",
-        options: [" ̶ 1", "Cannot be comprehended.", "0", "1"],
+        title: "The mean stress (σ<sup>m</sup>) for completely reversed cycle is:",
+        options: ["-1", "Cannot be comprehended.", "0", "1"],
         correct: 2,
       },
       {
         page: 10,
         title:
-          "Consider vertical machine for fatigue testing (like tensile testing). If the cross-sectional area of the sample is 10 mm2, maximum load is 1000 N and minimum load is 100 N, then the stress amplitude is:",
+          "Consider vertical machine for fatigue testing (like tensile testing). If the cross-sectional area of the sample is 10 mm<sup>2</sup>, maximum load is 1000 N and minimum load is 100 N, then the stress amplitude is:",
         options: ["90 MPa", "45 MPa", "55 MPa", "100 MPa"],
         correct: 1,
       },
       {
         page: 11,
         title: "Fatigue strength is the stress level corresponding to the number of cycles of:",
-        options: ["106 cycles", "105 cycles", "109 cycles", "107 cycles"],
+        options: ["10<sup>6</sup> cycles", "10<sup>5</sup> cycles", "10<sup>9</sup> cycles", "10<sup>7</sup> cycles"],
         correct: 3,
       },
     ],
