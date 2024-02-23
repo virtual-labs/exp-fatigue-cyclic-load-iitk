@@ -1,0 +1,73 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. What is the stress ratio for completely reversed cycle fatigue?",
+      "answers": {
+        "a": "0",
+        "b": "1",
+        "c": "-1",
+        "d": "∞"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. R-R Moore type fatigue testing machine is based on:",
+      "answers": {
+        "a": "Four-point bending",
+        "b": "Three-point bending",
+        "c": "Two-point bending",
+        "d": "Tensile loading"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. In high cycle fatigue, the components usually endure higher than:",
+      "answers": {
+        "a": "10<sup>6</sup> cycles",
+        "b": "10<sup>5</sup> cycles",
+        "c": "10<sup>7</sup> cycles",
+        "d": "10<sup>4</sup> cycles"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. If the maximum and minimum stresses in a cycle is 200 MPa and  ̶  100 MPa, the stress range is",
+      "answers": {
+        "a": "100",
+        "b": "150",
+        "c": "300",
+        "d": "50"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}
