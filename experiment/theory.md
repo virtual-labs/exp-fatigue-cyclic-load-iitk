@@ -17,7 +17,7 @@ Two distinct types of S-N behavior are observed, which are shown schematically i
 *	Most nonferrous alloys (e.g., Al, Cu, Mg) do not have a fatigue limit, i.e., S-N curve continues its downward trend at increasingly greater N values (Fig. 7). Thus, fatigue will ultimately occur regardless of the magnitude of the stress. For these materials, the fatigue response is specified as fatigue strength, which is defined as the stress level at which failure will occur for some specified number of cycles, i.e., 10<sup>7</sup> cycles.<br>
 <image src="images/image6.png">
 Fig. 7 shows the S-N curve for 2024-T6 Al alloy and 1045 Steel [1]. It can be observed that steel exhibits endurance limit; however, Al alloy does not exhibit endurance limit.<br>
-<image src="![alt text](image7.png)">
+<image src="image/(image7.png)">
 Fig. 7 S-N curve for 2024-T6 Al alloy and 1045 Steel<br>
 
 [1] Samatham Madhukar, International Journal of Current Engineering and Technology, 8 (2018)
