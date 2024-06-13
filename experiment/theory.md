@@ -20,5 +20,4 @@ Fig. 7 shows the S-N curve for 2024-T6 Al alloy and 1045 Steel [1]. It can be ob
 <image src="![alt text](image7.png)">
 Fig. 7 S-N curve for 2024-T6 Al alloy and 1045 Steel<br>
 
-
 [1] Samatham Madhukar, International Journal of Current Engineering and Technology, 8 (2018)
