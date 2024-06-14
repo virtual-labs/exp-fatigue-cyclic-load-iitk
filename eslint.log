@@ -1,0 +1,128 @@
+
+/home/runner/work/exp-fatigue-cyclic-load-iitk/exp-fatigue-cyclic-load-iitk/experiment/simulation/js/components.js
+    1:10  warning  'MIT' is defined but never used                        no-unused-vars
+   17:22  warning  'ContextMenu' is not defined                           no-undef
+   17:43  warning  'ContextMenu' is not defined                           no-undef
+   30:7   warning  'machineDirection' is assigned a value but never used  no-unused-vars
+   72:23  warning  'ContextMenu' is not defined                           no-undef
+   98:5   warning  'x' is not defined                                     no-undef
+   99:5   warning  'y' is not defined                                     no-undef
+  109:28  warning  'x' is not defined                                     no-undef
+  109:31  warning  'y' is not defined                                     no-undef
+  114:16  warning  'y' is not defined                                     no-undef
+  115:16  warning  'x' is not defined                                     no-undef
+  138:9   warning  'step' is not defined                                  no-undef
+  139:22  warning  'step' is not defined                                  no-undef
+  150:9   warning  'step' is not defined                                  no-undef
+  151:22  warning  'step' is not defined                                  no-undef
+  174:5   warning  'boundary' is not defined                              no-undef
+  183:13  warning  'boundary' is not defined                              no-undef
+  183:34  warning  'boundary' is not defined                              no-undef
+  183:55  warning  'boundary' is not defined                              no-undef
+  183:76  warning  'boundary' is not defined                              no-undef
+  195:12  warning  'drawLine' is defined but never used                   no-unused-vars
+  202:27  warning  'event' is defined but never used                      no-unused-vars
+  215:29  warning  'event' is defined but never used                      no-unused-vars
+  224:11  warning  'rect' is assigned a value but never used              no-unused-vars
+  296:23  warning  'ContextMenu' is not defined                           no-undef
+  305:15  warning  'sample' is not defined                                no-undef
+  361:10  warning  'Sample' is defined but never used                     no-unused-vars
+  364:5   warning  'assetPath' is assigned a value but never used         no-unused-vars
+  364:17  warning  'SAMPLE_ASSETS_PATH' is not defined                    no-undef
+  381:22  warning  'ContextMenu' is not defined                           no-undef
+  381:43  warning  'ContextMenu' is not defined                           no-undef
+  383:25  warning  'ContextMenu' is not defined                           no-undef
+  383:50  warning  'ContextMenu' is not defined                           no-undef
+  410:23  warning  'ContextMenu' is not defined                           no-undef
+  418:5   warning  'x' is not defined                                     no-undef
+  419:5   warning  'y' is not defined                                     no-undef
+  422:7   warning  'x' is not defined                                     no-undef
+  422:12  warning  'x' is not defined                                     no-undef
+  423:7   warning  'y' is not defined                                     no-undef
+  423:12  warning  'y' is not defined                                     no-undef
+  428:9   warning  'CURRENT_SAMPLE' is not defined                        no-undef
+  430:16  warning  'CURRENT_SAMPLE' is not defined                        no-undef
+  432:16  warning  'CURRENT_SAMPLE' is not defined                        no-undef
+  442:34  warning  'x' is not defined                                     no-undef
+  442:37  warning  'y' is not defined                                     no-undef
+  452:9   warning  'step' is not defined                                  no-undef
+  453:22  warning  'step' is not defined                                  no-undef
+  464:9   warning  'step' is not defined                                  no-undef
+  465:22  warning  'step' is not defined                                  no-undef
+  479:7   warning  'boundary' is not defined                              no-undef
+  486:7   warning  'boundary' is not defined                              no-undef
+  496:13  warning  'boundary' is not defined                              no-undef
+  496:34  warning  'boundary' is not defined                              no-undef
+  496:55  warning  'boundary' is not defined                              no-undef
+  496:76  warning  'boundary' is not defined                              no-undef
+  517:27  warning  'event' is defined but never used                      no-unused-vars
+  532:11  warning  'mit' is not defined                                   no-undef
+  532:18  warning  'mit' is not defined                                   no-undef
+  532:36  warning  'mit' is not defined                                   no-undef
+  533:9   warning  'mit' is not defined                                   no-undef
+
+/home/runner/work/exp-fatigue-cyclic-load-iitk/exp-fatigue-cyclic-load-iitk/experiment/simulation/js/context.js
+  1:7  warning  'ContextMenu' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-fatigue-cyclic-load-iitk/exp-fatigue-cyclic-load-iitk/experiment/simulation/js/index.js
+   85:5   warning  'sampleLength' is assigned a value but never used         no-unused-vars
+   86:5   warning  'sampleDiameter' is assigned a value but never used       no-unused-vars
+   87:5   warning  'sampleFinalLength' is assigned a value but never used    no-unused-vars
+   88:5   warning  'sampleFinalDiameter' is assigned a value but never used  no-unused-vars
+   93:10  warning  'handle' is defined but never used                        no-unused-vars
+   98:10  warning  'handleStep1' is defined but never used                   no-unused-vars
+  110:10  warning  'handleStep2' is defined but never used                   no-unused-vars
+  113:8   warning  'mit' is not defined                                      no-undef
+  157:7   warning  'mode' is assigned a value but never used                 no-unused-vars
+  162:39  warning  'e' is defined but never used                             no-unused-vars
+  168:67  warning  'e' is defined but never used                             no-unused-vars
+  176:5   warning  'mit' is not defined                                      no-undef
+  183:7   warning  'mit' is not defined                                      no-undef
+  191:9   warning  'mit' is not defined                                      no-undef
+  270:10  warning  'handleStep3' is defined but never used                   no-unused-vars
+  283:10  warning  'handleStep4' is defined but never used                   no-unused-vars
+  294:3   warning  'modal' is not defined                                    no-undef
+  294:15  warning  'Modal' is not defined                                    no-undef
+  368:3   warning  'modal' is not defined                                    no-undef
+  395:38  warning  'Chart' is not defined                                    no-undef
+  415:44  warning  'index' is defined but never used                         no-unused-vars
+  415:51  warning  'values' is defined but never used                        no-unused-vars
+
+/home/runner/work/exp-fatigue-cyclic-load-iitk/exp-fatigue-cyclic-load-iitk/experiment/simulation/js/main.js
+   11:5   warning  'vc' is assigned a value but never used              no-unused-vars
+   13:5   warning  'samplePath' is assigned a value but never used      no-unused-vars
+   14:5   warning  'CURRENT_SAMPLE' is assigned a value but never used  no-unused-vars
+   24:9   warning  'MIT' is not defined                                 no-undef
+   26:12  warning  'Sample' is not defined                              no-undef
+   59:10  warning  'i' is not defined                                   no-undef
+   59:18  warning  'i' is not defined                                   no-undef
+   59:36  warning  'i' is not defined                                   no-undef
+   60:12  warning  'j' is not defined                                   no-undef
+   60:20  warning  'j' is not defined                                   no-undef
+   60:39  warning  'j' is not defined                                   no-undef
+   61:22  warning  'i' is not defined                                   no-undef
+   61:25  warning  'j' is not defined                                   no-undef
+  132:24  warning  'event' is defined but never used                    no-unused-vars
+  167:5   warning  'img' is not defined                                 no-undef
+  168:5   warning  'img' is not defined                                 no-undef
+  169:5   warning  'img' is not defined                                 no-undef
+  170:5   warning  'img' is not defined                                 no-undef
+  171:33  warning  'img' is not defined                                 no-undef
+  172:24  warning  'img' is not defined                                 no-undef
+  186:40  warning  'e' is defined but never used                        no-unused-vars
+  237:10  warning  'loadSample' is defined but never used               no-unused-vars
+  255:10  warning  'loadWeightClicked' is defined but never used        no-unused-vars
+  256:3   warning  'loadWeight' is not defined                          no-undef
+  259:28  warning  'loadWeight' is not defined                          no-undef
+
+/home/runner/work/exp-fatigue-cyclic-load-iitk/exp-fatigue-cyclic-load-iitk/experiment/simulation/js/modal.js
+    4:7   warning  'Modal' is defined but never used  no-unused-vars
+  106:40  warning  'e' is defined but never used      no-unused-vars
+  117:40  warning  'e' is defined but never used      no-unused-vars
+  128:40  warning  'e' is defined but never used      no-unused-vars
+
+/home/runner/work/exp-fatigue-cyclic-load-iitk/exp-fatigue-cyclic-load-iitk/experiment/simulation/js/popover.js
+  39:7  warning  'Popover' is defined but never used  no-unused-vars
+
+✖ 113 problems (0 errors, 113 warnings)
+
