@@ -16,8 +16,10 @@ Two distinct types of S-N behavior are observed, which are shown schematically i
 *	For some ferrous (iron base) and titanium alloys, the S-N curve (Fig. 6) becomes horizontal at higher N values; or there is a limiting stress level, called the fatigue limit (also called as endurance limit), below which fatigue failure will not occur. This fatigue limit represents the largest value of fluctuating stress that will not cause failure for essentially an infinite number of cycles. For many steels, fatigue limits range between 35% and 60% of the tensile strength.<br>
 *	Most nonferrous alloys (e.g., Al, Cu, Mg) do not have a fatigue limit, i.e., S-N curve continues its downward trend at increasingly greater N values (Fig. 7). Thus, fatigue will ultimately occur regardless of the magnitude of the stress. For these materials, the fatigue response is specified as fatigue strength, which is defined as the stress level at which failure will occur for some specified number of cycles, i.e., 10<sup>7</sup> cycles.<br>
 <image src="images/image6.png"><br>
-Fig. 7 shows the S-N curve for 2024-T6 Al alloy and 1045 Steel [1]. It can be observed that steel exhibits endurance limit; however, Al alloy does not exhibit endurance limit.<br>
+Fig. 6 S-N curve for 2024-T6 Al alloy and 1045 Steel<br>
+Fig. 6 shows the S-N curve for 2024-T6 Al alloy and 1045 Steel [1]. It can be observed that steel exhibits endurance limit; however, Al alloy does not exhibit endurance limit.<br>
 <image src="images/image7.png"><br>
-Fig. 7 S-N curve for 2024-T6 Al alloy and 1045 Steel<br>
+Fig. 7 Types of S-N curve
+
 
 [1] Samatham Madhukar, International Journal of Current Engineering and Technology, 8 (2018)
